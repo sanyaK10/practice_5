@@ -59,6 +59,78 @@ int main()
 
 
     //number 4
+    const int SIZR = 9;
+    int ar[SIZR] = { 0, -11, 0, 12, 54, 0, 0, -40, 11 };
+
+    int j = 0;
+    for (int i = 0; i < SIZR; i++) {
+        if (ar[i] != 0) {
+            ar[j] = ar[i];
+            j++;
+        }
+    }
+    for (int i = j; i < SIZR; i++) {
+        ar[i] = -1;
+    }
+
+    for (int i = 0; i < SIZR; i++) {
+        cout << ar[i] << " ";
+    }
+
+
+    //number 5
+    const int SIZE = 5;
+    int arr1[SIZE] = { 10, 0, 52, -10, -44 };
+    int arr2[SIZE] = { 54, 0, -100, 12, 4 };
+    int arr3[SIZE * 2];
+
+    int j = 0;
+
+    for (int i = 0; i < SIZE; i++) {
+        if (arr1[i] > 0) {
+            arr3[j] = arr1[i];
+            j++;
+        }
+    }
+
+    for (int i = 0; i < SIZE; i++) {
+        if (arr2[i] > 0) {
+            arr3[j] = arr2[i];
+            j++;
+        }
+    }
+
+    for (int i = 0; i < SIZE; i++) {
+        if (arr1[i] == 0) {
+            arr3[j] = arr1[i];
+            j++;
+        }
+    }
+
+    for (int i = 0; i < SIZE; i++) {
+        if (arr2[i] == 0) {
+            arr3[j] = arr2[i];
+            j++;
+        }
+    }
+
+    for (int i = 0; i < SIZE; i++) {
+        if (arr1[i] < 0) {
+            arr3[j] = arr1[i];
+            j++;
+        }
+    }
+
+    for (int i = 0; i < SIZE; i++) {
+        if (arr2[i] < 0) {
+            arr3[j] = arr2[i];
+            j++;
+        }
+    }
+
+    for (int i = 0; i < SIZE * 2; i++) {
+        cout << arr3[i] << " ";
+    }
 
 }
     
